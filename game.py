@@ -111,7 +111,7 @@ while True:
         pen.clear()
         pen.write("Player A: {}                    Player B: {} ".format(player_a_score, player_b_score), align="center",
               font=('Monaco', 24, "normal"))
-        #os.system("afplay wallhit.wav&")
+ 
 
     if (ball.xcor()) < -390:
         ball.goto(0, 0)
@@ -120,7 +120,7 @@ while True:
         pen.clear()
         pen.write("Player A: {}                    Player B: {} ".format(player_a_score, player_b_score), align="center",
               font=('Monaco', 24, "normal"))
-        #os.system("afplay wallhit.wav&")
+
 
     # colisiones
 
@@ -128,10 +128,10 @@ while True:
         ball.ycor() < paddle_right.ycor() + 40 and ball.ycor() > paddle_right.ycor() - 40):
         ball.setx(340)
         ball_dx = ball_dx * -1
-        #os.system("afplay paddle.wav&")
+
 
     if (ball.xcor() < -340) and (ball.xcor() > -350) and (
         ball.ycor() < paddle_left.ycor() + 40 and ball.ycor() > paddle_left.ycor() - 40):
         ball.setx(-340)
         ball_dx = ball_dx * -1
-       # os.system("afplay paddle.wav&")
+
