@@ -1,5 +1,5 @@
 import turtle as t
-import os
+
 
 #variables del score
 
